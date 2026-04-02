@@ -1,5 +1,6 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+#here we have used the two separate method for chunking, one without overlapping some chunk data and anther with overlapping
 def chunk_fixed(documents):
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=500,
